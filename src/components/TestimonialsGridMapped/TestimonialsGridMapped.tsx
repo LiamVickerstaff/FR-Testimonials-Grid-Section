@@ -3,7 +3,12 @@ import { testimonials } from "./testimonialsData";
 
 export default function TestimonialsGridMapped() {
   return (
-    <section className={styles.TestimonalGrid}>
+    <section
+      className={styles.TestimonalGrid}
+      tabIndex={0}
+      role="region"
+      aria-label="Testimonials"
+    >
       {testimonials.map((t, i) => (
         <article
           key={i}
