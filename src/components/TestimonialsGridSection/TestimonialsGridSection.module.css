@@ -1,0 +1,224 @@
+.TestimonalGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.TestimonalCard {
+  width: 305px;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 40px 60px 50px 0px hsla(217, 19%, 35%, 0.24);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.PersonInfoGroup {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.PersonTextGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.Portrait {
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+cite {
+  display: none;
+}
+
+.QoutationMark {
+  display: none;
+}
+
+/* Daniel Card Stylings */
+.DanielCard {
+  background-color: var(--color-purple-500);
+}
+
+.DanielCard .Portrait {
+  border: 2px solid var(--color-purple-300);
+}
+
+.DanielCard .Fullname,
+.DanielCard .BoldQoute {
+  color: var(--color-white);
+}
+
+.DanielCard .VerifiedGraduate,
+.DanielCard .LightQoute {
+  color: var(--color-purple-50);
+}
+
+/* Jonathan Card Stylings */
+.JonathanCard {
+  background-color: var(--color-grey-500);
+}
+
+.JonathanCard .Fullname,
+.JonathanCard .BoldQoute {
+  color: var(--color-white);
+}
+
+.JonathanCard .VerifiedGraduate {
+  color: var(--color-grey-300);
+}
+
+.JonathanCard .LightQoute {
+  color: var(--color-grey-100);
+}
+
+/* Jeanette Card Stylings */
+.JeanetteCard {
+  background-color: var(--color-white);
+}
+
+.JeanetteCard .Fullname,
+.JeanetteCard .BoldQoute {
+  color: var(--color-grey-500);
+}
+
+.JeanetteCard .VerifiedGraduate,
+.JeanetteCard .LightQoute {
+  color: var(--color-grey-400);
+}
+
+/* Patrick Card Stylings */
+.PatrickCard {
+  background-color: var(--color-dark-blue);
+}
+
+.PatrickCard .Fullname,
+.PatrickCard .VerifiedGraduate {
+  color: var(--color-white);
+}
+
+.PatrickCard .Portrait {
+  border: 2px solid var(--color-purple-500);
+}
+
+.PatrickCard .BoldQoute {
+  color: var(--color-grey-200);
+}
+
+.PatrickCard .LightQoute {
+  color: var(--color-grey-100);
+}
+
+/* Kira Card Stylings */
+.KiraCard {
+  background-color: var(--color-white);
+}
+
+.KiraCard .Fullname,
+.KiraCard .BoldQoute {
+  color: var(--color-grey-500);
+}
+.KiraCard .VerifiedGraduate {
+  color: var(--color-grey-300);
+}
+
+.KiraCard .LightQoute {
+  color: var(--color-grey-400);
+}
+
+/* Tablet Viewport */
+
+@media (min-width: 768px) {
+  .TestimonalGrid {
+    width: 647px;
+    height: 1157px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .TestimonalCard {
+    width: 100%;
+    height: 100%;
+  }
+
+  .DanielCard {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+    z-index: 0;
+  }
+
+  .PatrickCard {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .KiraCard {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .QoutationMark {
+    display: block;
+    width: 104px;
+    height: 104 px;
+    position: absolute;
+    top: 0;
+    right: 10.5rem;
+    z-index: -1;
+  }
+}
+
+/* Desktop Viewport */
+
+@media (min-width: 1440px) {
+  .TestimonalGrid {
+    width: 1114px;
+    height: 582px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .TestimonalCard {
+    width: 100%;
+    height: 100%;
+  }
+
+  .DanielCard {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+    z-index: 0;
+  }
+
+  .PatrickCard {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .KiraCard {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+  }
+
+  .QoutationMark {
+    display: block;
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    top: 0;
+    right: 3.75rem;
+    z-index: -1;
+  }
+}

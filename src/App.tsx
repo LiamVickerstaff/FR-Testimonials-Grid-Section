@@ -1,10 +1,14 @@
 import "./App.css";
+import TestimonialsGridSection from "./components/TestimonialsGridSection/TestimonialsGridSection";
 
 function App() {
   return (
-    <>
-      <h1>Frontend Mentor - Testimonials Grid Section Solution By Liam V</h1>
-    </>
+    <main>
+      <h1 className="TextPresetOne">
+        Frontend Mentor - Testimonials Grid Section Solution By Liam V
+      </h1>
+      <TestimonialsGridSection />
+    </main>
   );
 }
 
