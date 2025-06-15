@@ -6,7 +6,6 @@ export default function TestimonialsGridMapped() {
     <section
       className={styles.TestimonalGrid}
       tabIndex={0}
-      role="region"
       aria-label="Testimonials"
     >
       {testimonials.map((t, i) => (
