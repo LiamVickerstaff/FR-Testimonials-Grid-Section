@@ -1,6 +1,6 @@
-import styles from "./TestimonialsGridSection.module.css";
+import styles from "./TestimonialsGridSectionRegular.module.css";
 
-export default function TestimonialsGridSection() {
+export default function TestimonialsGridSectionRegular() {
   return (
     <section className={styles.TestimonalGrid}>
       <article className={`${styles.TestimonalCard} ${styles.DanielCard}`}>

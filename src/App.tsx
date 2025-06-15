@@ -1,5 +1,6 @@
 import "./App.css";
-import TestimonialsGridSection from "./components/TestimonialsGridSection/TestimonialsGridSection";
+import TestimonialsGridMapped from "./components/TestimonialsGridMapped/TestimonialsGridMapped";
+// import TestimonialsGridSectionRegular from "./components/TestimonialsGridSectionRegular/TestimonialsGridSectionRegular";
 
 function App() {
   return (
@@ -7,7 +8,8 @@ function App() {
       <h1 className="TextPresetOne">
         Frontend Mentor - Testimonials Grid Section Solution By Liam V
       </h1>
-      <TestimonialsGridSection />
+      {/* <TestimonialsGridSectionRegular /> */}
+      <TestimonialsGridMapped />
     </main>
   );
 }
